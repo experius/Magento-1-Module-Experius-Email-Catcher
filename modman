@@ -1,0 +1,4 @@
+app/code/community/Experius/Emailcatcher/							app/code/community/Experius/Emailcatcher/
+app/design/adminhtml/default/default/layout/emailcatcher.xml   		app/design/adminhtml/default/default/layout/emailcatcher.xml
+app/design/adminhtml/default/default/template/emailcatcher/    		app/design/adminhtml/default/default/template/emailcatcher/
+app/etc/modules/Experius_Emailcatcher.xml							app/etc/modules/Experius_Emailcatcher.xml
