@@ -1,13 +1,19 @@
 <?php
-/**
- * A Magento module named Experius/EmailCatcher
- * Copyright (C) 2016 Ruben Panis
- * 
- * This file included in Experius/EmailCatcher is licensed under OSL 3.0
- * 
- * http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
- * Please see LICENSE.txt for the full text of the OSL 3.0 license
- */
+/**     
+* Experius/Emailcatcher SQL Install script   
+*     
+* Emailcatcher SQL Install script   
+* This file is included in Experius/EmailCatcher is licensed under OSL 3.0
+*     
+* @category         Experius     
+* @package          Experius_Emailcatcher     
+* @subpackage       Setup_Install    
+* @copyright        Copyright (c) 2005-2016 Experius. (http://www.experius.nl)  
+* @author           Ruben Panis   
+* @license          http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)     
+* @version          Release: 1.0.0    
+* @since            Class available since module Release 1.0.0     
+*/ 
 
 $installer = $this;
 $installer->startSetup();
