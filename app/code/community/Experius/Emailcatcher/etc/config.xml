@@ -74,17 +74,15 @@
   </admin>
   <adminhtml>
 	<menu>
-	  <emailcatcher module="emailcatcher">
-		<title>Emailcatcher</title>
-		<sort_order>100</sort_order>
+	  <system>
 		<children>
 		  <emailcatcherbackend module="emailcatcher">
 			<title>Email Catcher</title>
-			<sort_order>0</sort_order>
+			<sort_order>120</sort_order>
 			<action>admin_emailcatcher/adminhtml_emailcatcherbackend</action>
 		  </emailcatcherbackend>
 		</children>
-	  </emailcatcher>
+	  </system>
 	</menu>
 	<acl>
 	  <resources>
@@ -97,12 +95,26 @@
 			  <title>Emailcatcher</title>
 			  <sort_order>1000</sort_order>
 			  <children>
-		  <emailcatcherbackend translate="title">
-			<title>Email Catcher</title>
-		  </emailcatcherbackend>
+        		  <emailcatcherbackend translate="title">
+        			<title>Email Catcher</title>
+        		  </emailcatcherbackend>        		  
 			  </children>
 			</emailcatcher>
-		  </children>
+			<system>
+                <children>
+                    <experius_emailcatcher>
+                        <title>Emailcatcher section</title>
+                    </experius_emailcatcher>  
+                    <config>
+                        <children>
+                            <experius_emailcatcher>
+                                <title>Emailcatcher section</title>
+                            </experius_emailcatcher>  
+                        </children>
+                    </config>                        
+                </children>
+            </system>
+        </children>
 		</admin>
 	  </resources>
 	</acl>

@@ -5,8 +5,7 @@ class Experius_Emailcatcher_Adminhtml_EmailcatcherbackendController extends Mage
     {     	
        $this->loadLayout();
 	   $this->_title($this->__("Email Catcher"));
-	   $this->renderLayout();
-	   
+	   $this->renderLayout();	   
     }
 	
 	/**

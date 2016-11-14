@@ -16,20 +16,4 @@ class Experius_Emailcatcher_Block_Adminhtml_Emailcatcherbackend_Grid_Renderer_Ac
 
         return parent::render($row);
     }
-
-    protected function _getEscapedValue($value)
-    {
-        return addcslashes(htmlspecialchars($value),'\\\'');
-    }
-
-    protected function _actionsToHtml(array $actions)
-    {
-        $html = array();
-        $attributesObject = new Varien_Object();
-        foreach ($actions as $action) {
-            $attributesObject->setData($action['@']);
-            $html[] = '<a ' . $attributesObject->serialize() . '>' . $action['#'] . '</a>';
-        }
-        return implode(' <span class="separator">&nbsp;|&nbsp;</span> ', $html);
-    }
 }
