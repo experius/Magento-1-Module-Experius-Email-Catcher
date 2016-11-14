@@ -40,7 +40,7 @@ if ($installer->getConnection()->isTableExists($tableName) != true) {
 		->addColumn('in_devmode', Varien_Db_Ddl_Table::TYPE_SMALLINT, null, [], 'in_devmode')				
 		->addColumn('created_at', Varien_Db_Ddl_Table::TYPE_DATETIME, null, [], 'created_at')
 		
-        ->setComment('Experius Mailcatcher Table');
+        ->setComment('Experius Email Catcher Table');
     $installer->getConnection()->createTable($table);
 }
 

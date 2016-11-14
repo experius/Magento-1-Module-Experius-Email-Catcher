@@ -19,7 +19,7 @@ class Experius_Emailcatcher_Block_Adminhtml_Emailcatcherbackend extends Mage_Adm
 	public function __construct() {
 		$this->_controller = 'adminhtml_emailcatcherbackend';
 		$this->_blockGroup = 'emailcatcher';
-		$this->_headerText = Mage::helper('emailcatcher')->__('Experius Emailcatcher');
+		$this->_headerText = Mage::helper('emailcatcher')->__('Experius Email Catcher');
 		parent::__construct();
 	}
 }

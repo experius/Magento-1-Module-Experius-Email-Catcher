@@ -13,7 +13,7 @@
     </tabs>
     <sections>
         <experius_emailcatcher translate="label" module="emailcatcher">    
-            <label>Emailcatcher</label>
+            <label>Email Catcher</label>
             <tab>experius</tab>
             <frontend_type>text</frontend_type>
             <sort_order>10000</sort_order>
@@ -22,7 +22,7 @@
             <show_in_store>1</show_in_store>        
             <groups>
                 <catcher_config translate="label" module="emailcatcher"> 
-                    <label>Email catcher</label>
+                    <label>Email Catcher</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>10</sort_order>
                     <show_in_default>1</show_in_default>
