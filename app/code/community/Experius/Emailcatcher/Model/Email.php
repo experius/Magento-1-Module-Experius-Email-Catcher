@@ -39,9 +39,6 @@ class Experius_Emailcatcher_Model_Email extends Mage_Core_Model_Email
             ($isMailSent || (Mage::getStoreConfigFlag('system/smtp/disable') 
             && Mage::getStoreConfigFlag('experius_emailcatcher/catcher_config/devmode')))) {
 
-            var_dump($this);
-            die();
-
             $emailcatch = Mage::getModel('emailcatcher/emailcatcher');
 
             $emailcatch -> setTo(implode(',', $this -> getToEmail()));
