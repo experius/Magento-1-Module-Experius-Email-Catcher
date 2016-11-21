@@ -30,7 +30,7 @@ class Experius_Emailcatcher_Model_Email_Template extends Mage_Core_Model_Email_T
 		//store if emailcatcher is enabled and mail is sent or mail is disabled in dev and dev mail is catched  
 		if (Mage::getStoreConfigFlag('experius_emailcatcher/catcher_config/is_enabled') && 
 			($isMailSent || (Mage::getStoreConfigFlag('system/smtp/disable') && 
-			Mage::getStoreConfigFlag('experius_emailcatcher/catcher_config/devmode')))) {
+			Mage::getStoreConfigFlag('experius_emailcatcher/catcher_config/disabledmail')))) {
 			
 			try {
 				$emailcatch = Mage::getModel('emailcatcher/emailcatcher');
@@ -39,7 +39,7 @@ class Experius_Emailcatcher_Model_Email_Template extends Mage_Core_Model_Email_T
 				$emailcatch->setFrom($this->getSenderEmail());
 				$emailcatch->setSubject($this->getProcessedTemplateSubject($variables));	
 				$emailcatch->setBody($this->getProcessedTemplate($variables, true));
-				$emailcatch->setIn_devmode(Mage::getStoreConfigFlag('system/smtp/disable'));	
+				$emailcatch->setSmtpdisabled(Mage::getStoreConfigFlag('system/smtp/disable'));	
 				$emailcatch->setCreated_at(Mage::getModel('core/date')->date('Y-m-d H:i:s'));				
 				
 				$emailcatch->save();

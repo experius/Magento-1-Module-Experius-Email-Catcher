@@ -52,7 +52,7 @@ class Experius_Emailcatcher_Block_Adminhtml_Emailcatcher_Grid extends Mage_Admin
 
         $this -> addColumn('subject', array('header' => Mage::helper('emailcatcher') -> __('Subject'), 'index' => 'subject', 'sortable' => false, ));
 
-        $this -> addColumn('in_devmode', array('header' => Mage::helper('emailcatcher') -> __('In dev mode'), 'index' => 'in_devmode', 'sortable' => false, 'type' => 'checkbox', 'values' => array('1', '2'), ));
+        $this -> addColumn('smtpdisabled', array('header' => Mage::helper('emailcatcher') -> __('Smtp disabled'), 'index' => 'smtpdisabled', 'sortable' => false, 'type' => 'checkbox', 'values' => array('1', '2'), ));
 
         $this -> addColumn('created_at', array('header' => Mage::helper('emailcatcher') -> __('Created at'), 'index' => 'created_at', 'sortable' => false, ));
 

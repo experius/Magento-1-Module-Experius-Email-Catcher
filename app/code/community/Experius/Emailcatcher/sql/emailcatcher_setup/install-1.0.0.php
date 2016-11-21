@@ -37,7 +37,7 @@ if ($installer->getConnection()->isTableExists($tableName) != true) {
 		->addColumn('from', Varien_Db_Ddl_Table::TYPE_TEXT, null, [], 'from')
 		->addColumn('subject', Varien_Db_Ddl_Table::TYPE_TEXT, null, [], 'subject')
 		->addColumn('body', Varien_Db_Ddl_Table::TYPE_TEXT, null, [], 'body')
-		->addColumn('in_devmode', Varien_Db_Ddl_Table::TYPE_SMALLINT, null, [], 'in_devmode')				
+		->addColumn('smtpdisabled', Varien_Db_Ddl_Table::TYPE_SMALLINT, null, [], 'smtpdisabled')				
 		->addColumn('created_at', Varien_Db_Ddl_Table::TYPE_DATETIME, null, [], 'created_at')
 		
         ->setComment('Experius Email Catcher Table');
