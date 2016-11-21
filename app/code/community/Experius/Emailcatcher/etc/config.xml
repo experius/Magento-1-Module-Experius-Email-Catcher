@@ -78,11 +78,11 @@
                 <children>
                     <tools>
                         <children>
-                            <emailcatcherbackend module="emailcatcher">
+                            <emailcatcher module="emailcatcher">
                                 <title>Email Catcher</title>
                                 <sort_order>1001</sort_order>
                                 <action>admin_emailcatcher/adminhtml_emailcatcher</action>
-                            </emailcatcherbackend>
+                            </emailcatcher>
                         </children>
                     </tools>
                 </children>
@@ -99,9 +99,9 @@
                             <title>Emailcatcher</title>
                             <sort_order>1000</sort_order>
                             <children>
-                                <emailcatcheradmin translate="title">
+                                <emailcatcher translate="title">
                                     <title>Email Catcher</title>
-                                </emailcatcheradmin>
+                                </emailcatcher>
                             </children>
                         </emailcatcher>
                         <system>
