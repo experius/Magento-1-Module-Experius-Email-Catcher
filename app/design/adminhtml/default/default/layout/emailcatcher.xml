@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <layout version="1.0.0">
-    <emailcatcher_adminhtml_emailcatcherbackend_index>
+    <emailcatcher_adminhtml_emailcatcher_index>
         <reference name="content">
-            <block type="emailcatcher/adminhtml_emailcatcherbackend" name="emailcatcherbackend" />
+            <block type="emailcatcher/adminhtml_emailcatcher" name="emailcatcher" />
         </reference>
-    </emailcatcher_adminhtml_emailcatcherbackend_index>
+    </emailcatcher_adminhtml_emailcatcher_index>
     <emailcatcher_systemPreview>
-        <block type="emailcatcher/adminhtml_emailcatcherbackend_preview" name="emailcatcherbackend" output="toHtml"></block>
+        <block type="emailcatcher/adminhtml_emailcatcher_preview" name="emailcatcher" output="toHtml"></block>
     </emailcatcher_systemPreview>
 </layout>

@@ -1,26 +1,26 @@
 <?php
 /**
- * Experius/Emailcatcher Emailcatcherbackend Grid
+ * Experius/Emailcatcher Emailcatcher Grid
  *
  * Emailcatcher backend grid
  * This file is included in Experius/EmailCatcher is licensed under OSL 3.0
  *
  * @category         Experius
  * @package          Experius_Emailcatcher
- * @subpackage       Emailcatcherbackend_Grid
+ * @subpackage       Emailcatcher_Grid
  * @copyright        Copyright (c) 2005-2016 Experius. (http://www.experius.nl)
  * @author           Ruben Panis
  * @license          http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @version          Release: 1.0.0
  * @since            Class available since module Release 1.0.0
  */
-class Experius_Emailcatcher_Block_Adminhtml_Emailcatcherbackend_Grid extends Mage_Adminhtml_Block_Widget_Grid
+class Experius_Emailcatcher_Block_Adminhtml_Emailcatcher_Grid extends Mage_Adminhtml_Block_Widget_Grid
 {
     public function __construct()
-    {
+    {        
         parent::__construct();
         $this -> setEmptyText(Mage::helper('emailcatcher') -> __('No emails found'));
-        $this -> setId('emailcatcherbackendGrid');
+        $this -> setId('emailcatcherGrid');
         $this -> setDefaultSort('emailcatcher_id');
         $this -> setDefaultDir('ASC');
         $this -> setSaveParametersInSession(true);
@@ -56,7 +56,7 @@ class Experius_Emailcatcher_Block_Adminhtml_Emailcatcherbackend_Grid extends Mag
 
         $this -> addColumn('created_at', array('header' => Mage::helper('emailcatcher') -> __('Created at'), 'index' => 'created_at', 'sortable' => false, ));
 
-        $this -> addColumn('action', array('header' => Mage::helper('emailcatcher') -> __('View email'), 'index' => 'emailcatcher_id', 'sortable' => false, 'filter' => false, 'width' => '100px', 'renderer' => 'emailcatcher/adminhtml_emailcatcherbackend_grid_renderer_action'));
+        $this -> addColumn('action', array('header' => Mage::helper('emailcatcher') -> __('View email'), 'index' => 'emailcatcher_id', 'sortable' => false, 'filter' => false, 'width' => '100px', 'renderer' => 'emailcatcher/adminhtml_emailcatcher_grid_renderer_action'));
 
         return parent::_prepareColumns();
     }

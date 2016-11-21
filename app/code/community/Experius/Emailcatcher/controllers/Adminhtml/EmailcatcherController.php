@@ -1,20 +1,20 @@
 <?php
 /**
- * Experius/Emailcatcher Backend Controller
+ * Experius/Emailcatcher Controller
  *
  * Controller for the backend of the Experius Emailcatcher
  * This file is included in Experius/EmailCatcher is licensed under OSL 3.0
  *
  * @category         Experius
  * @package          Experius_Emailcatcher
- * @subpackage       EmailcatcherbackendController
+ * @subpackage       EmailcatcherController
  * @copyright        Copyright (c) 2005-2016 Experius. (http://www.experius.nl)
  * @author           Ruben Panis
  * @license          http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @version          Release: 1.0.0
  * @since            Class available since module Release 1.0.0
  */
-class Experius_Emailcatcher_Adminhtml_EmailcatcherbackendController extends Mage_Adminhtml_Controller_Action
+class Experius_Emailcatcher_Adminhtml_EmailcatcherController extends Mage_Adminhtml_Controller_Action
 {
     public function indexAction()
     {
