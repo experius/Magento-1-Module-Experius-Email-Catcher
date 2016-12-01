@@ -25,7 +25,7 @@ class Experius_Emailcatcher_Model_Email_Template extends Mage_Core_Model_Email_T
      * @return boolean
      */    
 	public function send($email, $name = null, array $variables = array()) {
-		$isMailSent = parent::send();
+		$isMailSent = parent::send($email, $name, $variables);
 				
 		//store if emailcatcher is enabled and mail is sent or mail is disabled in dev and dev mail is catched  
 		if (Mage::getStoreConfigFlag('experius_emailcatcher/catcher_config/is_enabled') && 
