@@ -9,7 +9,7 @@ Available configuration (System > Configuration > Experius > Email catcher):
 -	Enabled (Yes/No)
 -	Ignore mail disabled setting (Yes/No)
 
-"Catched" mail can be viewed at:
+"Caught" mail can be viewed at:
 System > Tools > Email Catcher
 
 This includes the option to view the formatted email body.
